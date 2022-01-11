@@ -2,12 +2,13 @@
 
 * We use the `renv` package to maintain consistency in package versions across each team member's computer and the server. Once you have cloned the git repo, you will want to restore the package versions that we have been using. To do so, first open R through Terminal. 
     ```
-    module load R/4.0.3 # or whatever the newest version is, check `module avail R`
+    module load R/4.1.1 # `module avail R` to see what versions are available
     R
+    install.packages("renv") # only need to run this if renv is not installed
     renv::restore()
     ```
     
-Ideally, this would install and restore all the packages to the same version we have been using. However, in practice, I rarely found that this was the case. Specifically, I had a lot of issues with being able to install the `rJava` and `magick` packages. 
+Ideally, this would install and restore all the packages to the same version we are using on other computers being used for the project. However, in practice, I rarely found that this was the case. Specifically, I had a lot of issues with being able to install the `rJava` and `magick` packages. 
 
 * If `renv::restore()` command works perfectly, then you do **not need to do these steps**. However, if one of the packages failed to install, we are going to set up a conda environment to deal with this. 
 

@@ -49,7 +49,7 @@ Then you’ll see your local folder on the left pane and the server folder on th
         followed by a timestamp.
         
     # For R:
-    moudule load R/4.1.1 # module avail R to see what versions are available
+    module load R/4.1.1 # `module avail R` to see what versions are available
     ls -ltr scripts # I always run this first to make sure the scripts I
                     # want to run uploaded correctly.
     nohup R CMD BATCH --vanilla -q scripts/scriptname.R logs/scriptname.log &

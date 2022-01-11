@@ -4,21 +4,21 @@ Instructions for using the Kellogg Linux Cluster (KLC) for our research projects
  
 ## Connect to the server
 
-    1. Use your NetID to connect via VPN. [Instructions](https://kb.northwestern.edu/page.php?id=94726). Note that every time you want to connect to the server, you first need to connect to the VPN.
-    
-    2. If you have a Mac, open the terminal. If you have Windows, first install [Cygwin](https://www.cygwin.com/) so that you can use Linux commands from the command line, then you can open the command line with Windows+R, type cmd, Enter.
-    
-    3. In the terminal or command line, type:
-    ```linux
-    ssh <netID>@klc.ci.northwestern.edu
-    ```
-    where you should replace <netID> with your NetID made up of letters and numbers, e.g. mine is skh2820.
-    
-    4. Enter the password you created for your netID.
-    
-    5. Now you should be connected to the correct folder through terminal. Next you need to `cd` to the “parent folder” for our project (which starts with `/kellogg/proj/skh2820/` followed by the project folder name). Note that here you want to leave skh2820 rather than use your own NetID, since that’s the folder we are using and they should have given you access to that folder.
-    
-    6. Here you can type `ls` to see the folder structure, which is the same as our Dropbox folder. I usually use `ls -ltr` to list all files with the date they were created and the most recent at the bottom. You can also do this for subfolders e.g. `ls -ltr scripts` or `ls -ltr logs`
+1. Use your NetID to connect via VPN. [Instructions](https://kb.northwestern.edu/page.php?id=94726). Note that every time you want to connect to the server, you first need to connect to the VPN.
+
+2. If you have a Mac, open the terminal. If you have Windows, first install [Cygwin](https://www.cygwin.com/) so that you can use Linux commands from the command line, then you can open the command line with Windows+R, type cmd, Enter.
+
+3. In the terminal or command line, type:
+```linux
+ssh <netID>@klc.ci.northwestern.edu
+```
+where you should replace <netID> with your NetID made up of letters and numbers, e.g. mine is skh2820.
+
+4. Enter the password you created for your netID.
+
+5. Now you should be connected to the correct folder through terminal. Next you need to `cd` to the “parent folder” for our project (which starts with `/kellogg/proj/skh2820/` followed by the project folder name). Note that here you want to leave skh2820 rather than use your own NetID, since that’s the folder we are using and they should have given you access to that folder.
+
+6. Here you can type `ls` to see the folder structure, which is the same as our Dropbox folder. I usually use `ls -ltr` to list all files with the date they were created and the most recent at the bottom. You can also do this for subfolders e.g. `ls -ltr scripts` or `ls -ltr logs`
 
 ## Upload files    
 

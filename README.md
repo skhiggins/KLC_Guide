@@ -4,7 +4,7 @@ Instructions for using the Kellogg Linux Cluster (KLC) for our research projects
  
 ## Connect to the server
 
-1. Use your NetID to connect via VPN. [Instructions](https://kb.northwestern.edu/page.php?id=94726). Note that every time you want to connect to the server, you first need to connect to the VPN.
+1. If you are not on campus, use your NetID to connect via VPN. [Instructions](https://kb.northwestern.edu/page.php?id=94726). Note that every time you want to connect to the server, you first need to connect to the VPN if you are not on campus.
 
 2. If you have a Mac, open the terminal. If you have Windows, first install [Cygwin](https://www.cygwin.com/) so that you can use Linux commands from the command line, then you can open the command line with Windows+R, type cmd, Enter.
 

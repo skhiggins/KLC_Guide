@@ -12,7 +12,7 @@ Instructions for using the Kellogg Linux Cluster (KLC) for our research projects
     ```linux
     ssh <netID>@klc.ci.northwestern.edu
     ```
-    where you should replace <netID> with your NetID made up of letters and numbers, e.g. mine is skh2820.
+    where you should replace `<netID>` with your NetID made up of letters and numbers, e.g. mine is skh2820.
 
 4. Enter the password you created for your netID.
 
@@ -62,6 +62,7 @@ Then you’ll see your local folder on the left pane and the server folder on th
 ## Misc.  
 
 Some additional tips for using the Linux Server:
+
     ```linux
     ps x # check if the job is still running and which jobs are running
     ls -ltr logs # double check your script is running

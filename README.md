@@ -57,11 +57,11 @@ Then you’ll see your local folder on the left pane and the server folder on th
     # R note: all of the output will be stored in logs/scriptname.log
     ```
 
-11. When the proc files, logs, graphs, etc. are ready on the server, use FileZilla again to download them to the Dropbox folder.
+10. When the proc files, logs, graphs, etc. are ready on the server, use FileZilla again to download them to the Dropbox folder.
 
 ## Misc.  
 
-10. Some additional tips for using the Linux Server:
+11. Some additional tips for using the Linux Server:
     ```linux
     ps x # check if the job is still running and which jobs are running
     ls -ltr logs # double check your script is running

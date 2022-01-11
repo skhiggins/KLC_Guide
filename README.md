@@ -61,7 +61,7 @@ Then you’ll see your local folder on the left pane and the server folder on th
 
 ## Misc.  
 
-11. Some additional tips for using the Linux Server:
+Some additional tips for using the Linux Server:
     ```linux
     ps x # check if the job is still running and which jobs are running
     ls -ltr logs # double check your script is running
@@ -80,5 +80,5 @@ Then you’ll see your local folder on the left pane and the server folder on th
     #  starting from the beginning and you hit enter to show more of it.
     ```
 
-12. Some additional tips on installing R packages on the server can be found [here](R_packages.md).
+Some additional tips on installing R packages on the server can be found [here](R_packages.md).
     

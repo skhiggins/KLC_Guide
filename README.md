@@ -62,23 +62,23 @@ Then you’ll see your local folder on the left pane and the server folder on th
 ## Misc.  
 
 - Some additional tips for using the Linux Server:
-```linux
-ps x # check if the job is still running and which jobs are running
-ls -ltr logs # double check your script is running
-             # as it should create a log file
-tail logs/logfile.log # check the status of your job by viewing the 
-    # last 10 lines of the log file, where logfile is replaced with the 
-    # name of the file
-tail -100 logs/logfile.log # shows the last 100 lines of the log file
-    # if you need to see more
-# For Stata:
-tail 00_run.log # The nohup stata-mp... command above always 
-    # creates a 00_run.log file (in the project root directory, not in 
-    # logs) which you can look at to debug in case something goes 
-    # really wrong and your log files don’t even get created.
-# Note: an alternative to `tail` is `more`, which shows the file 
-#  starting from the beginning and you hit enter to show more of it.
-```
+    ```linux
+    ps x # check if the job is still running and which jobs are running
+    ls -ltr logs # double check your script is running
+                 # as it should create a log file
+    tail logs/logfile.log # check the status of your job by viewing the 
+        # last 10 lines of the log file, where logfile is replaced with the 
+        # name of the file
+    tail -100 logs/logfile.log # shows the last 100 lines of the log file
+        # if you need to see more
+    # For Stata:
+    tail 00_run.log # The nohup stata-mp... command above always 
+        # creates a 00_run.log file (in the project root directory, not in 
+        # logs) which you can look at to debug in case something goes 
+        # really wrong and your log files don’t even get created.
+    # Note: an alternative to `tail` is `more`, which shows the file 
+    #  starting from the beginning and you hit enter to show more of it.
+    ```
 
 - Some additional tips on installing R packages on the server can be found [here](R_packages.md).
     

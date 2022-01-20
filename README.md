@@ -33,7 +33,7 @@ For broader programming guides, see my [R Guide](https://github.com/skhiggins/R_
     - Port: 22
 
 9. Then (on FileZilla) you’ll see your local folder on the left pane and the server folder on the right pane. On the left navigate to your local directory for the project folder on your local computer (which should also be synced using GitHub or Box or Dropbox), and on the right navigate to the project folder on the server. Then you can upload files by double-clicking them or selecting them, right-click, upload. (Note: make sure you upload them to the correct folder on the server, e.g. upload scripts to the scripts folder.) 
-    - Alternatively, for projects that use git for version control, you can `git push` on your local computer and then `git pull` on the server. However, for both raw and processed data files, which we exclude from version control by including them in the `.gitignore` file, you will still need to upload data files.
+    - Alternatively, for projects that use git for version control, you can `git push` on your local computer and then `git pull` on the server. However, for both raw and processed data files, which we exclude from version control by including them in the `.gitignore` file, you will still need to upload data files through an FTP client such as Filezilla.
 
 ## Run scripts    
 
@@ -64,7 +64,7 @@ For broader programming guides, see my [R Guide](https://github.com/skhiggins/R_
     ```
 
 12. When the processed data files, logs, graphs, etc. are ready on the server, use FileZilla again to download them to the Dropbox folder.
-    - Alternatively, for projects using git for version control, for the logs and graphs you can `git push` on the server and `git pull` on your local computer. For processed data files, you will still need to use SFTP since we exclude these from version control by including them in the `.gitignore` file.
+    - Alternatively, for projects using git for version control, for the logs and graphs you can `git push` on the server and `git pull` on your local computer. For processed data files, you will still need to download them through an FTP client such as Filezilla since we exclude these from version control by including them in the `.gitignore` file.
 
 ## Misc.  
 

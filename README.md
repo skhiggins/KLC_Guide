@@ -1,6 +1,8 @@
 # KLC Guide
 
 Instructions for using the Kellogg Linux Cluster (KLC) for our research projects.
+
+For broader programming guides, see my [R Guide](https://github.com/skhiggins/R_guide), [Python Guide](https://github.com/skhiggins/Python_guide) and [Stata Guide](https://github.com/skhiggins/Stata_guide).
  
 ## Connect to the server
 
@@ -16,24 +18,28 @@ Instructions for using the Kellogg Linux Cluster (KLC) for our research projects
 
 4. Enter the password you created for your netID.
 
-5. Now you should be connected to the correct folder through terminal. Next you need to `cd` to the “parent folder” for our project (which starts with `/kellogg/proj/skh2820/` followed by the project folder name). Note that here you want to leave skh2820 rather than use your own NetID, since that’s the folder we are using and they should have given you access to that folder.
+5. Now you should be connected to the correct folder through terminal. Next you need to `cd` to the “parent folder” for our project (which starts with `/kellogg/proj/skh2820/` followed by the project folder name). Note that for Sean's projects, here you want to leave skh2820 rather than use your own NetID, since that’s the folder we are using and they should have given you access to that folder.
 
 6. Here you can type `ls` to see the folder structure, which is the same as our Dropbox folder. I usually use `ls -ltr` to list all files with the date they were created and the most recent at the bottom. You can also do this for subfolders e.g. `ls -ltr scripts` or `ls -ltr logs`
 
 ## Upload files    
 
-7. To upload new files, e.g. raw data or scripts that you’ve edited and need to run on the server, you need an FTP client. I use [FileZilla](https://filezilla-project.org/). Another option is [CyberDuck](https://cyberduck.io/). For FileZilla, once you open it put:
+7. To upload new files, e.g. raw data or scripts that you’ve edited and need to run on the server, you need an FTP client. I use [FileZilla](https://filezilla-project.org/). Another option is [CyberDuck](https://cyberduck.io/). 
+
+8. For FileZilla, once you open it put:
     - Host: klc.ci.northwestern.edu
     - Username: (your NetID, i.e. the letter and number combination)
     - Password: (your password for your NetID)
     - Port: 22
-Then you’ll see your local folder on the left pane and the server folder on the right pane. On the left navigate to your local directory for the project folder on dropbox, and on the right navigate to the project folder on the server. Then you can upload files by double-clicking them or selecting them, right-click, upload. (Note: make sure you upload them to the correct folder on the server, e.g. upload scripts to the scripts folder.) 
+
+9. Then (on FileZilla) you’ll see your local folder on the left pane and the server folder on the right pane. On the left navigate to your local directory for the project folder on your local computer (which should also be synced using GitHub or Box or Dropbox), and on the right navigate to the project folder on the server. Then you can upload files by double-clicking them or selecting them, right-click, upload. (Note: make sure you upload them to the correct folder on the server, e.g. upload scripts to the scripts folder.) 
+    - Alternatively, for projects that use git for version control, you can `git push` on your local computer and then `git pull` on the server. However, for both raw and processed data files, which we exclude from version control by including them in the `.gitignore` file, you will still need to upload data files.
 
 ## Run scripts    
 
-8. For Stata, best practice is to always use the "run script" (`00_run.do`) to run the files you want to run on the server. You can see how we set that up in my [Stata Guide](https://github.com/skhiggins/Stata_guide). Basically you create objects for each script and then you set those objects equal to 1 if you want them to run and 0 otherwise.
+10. For Stata, best practice is to always use the "run script" (`00_run.do`) to run the files you want to run on the server. You can see how we set that up in my [Stata Guide](https://github.com/skhiggins/Stata_guide). Basically you create objects for each script and then you set those objects equal to 1 if you want them to run and 0 otherwise.
 
-9. Once you have the scripts uploaded, you can run them as follows (where my comments are after `#`, don’t include that in the command). Note that you must be in the project root directory (not one of its subfolders) to run these commands.
+11. Once you have the scripts uploaded, you can run them as follows (where my comments are after `#`; don’t include that in the command). Note that you must be in the project root directory (not one of its subfolders) to run these commands.
     ```linux
     # For Stata: 
     module load stata/15 # This is the most recent version on the server
@@ -57,7 +63,8 @@ Then you’ll see your local folder on the left pane and the server folder on th
     # R note: all of the output will be stored in logs/scriptname.log
     ```
 
-10. When the proc files, logs, graphs, etc. are ready on the server, use FileZilla again to download them to the Dropbox folder.
+12. When the processed data files, logs, graphs, etc. are ready on the server, use FileZilla again to download them to the Dropbox folder.
+    - Alternatively, for projects using git for version control, for the logs and graphs you can `git push` on the server and `git pull` on your local computer. For processed data files, you will still need to use SFTP since we exclude these from version control by including them in the `.gitignore` file.
 
 ## Misc.  
 

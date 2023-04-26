@@ -22,7 +22,7 @@ Processing of large datasets should be done on KLC. What is a large dataset? As 
 
     -   Push results to GitHub and download locally (i.e. on your own computer), or
 
-    -   Download processed data files with an FTP client.
+    -   Download processed data files with FileZilla.
 
 ## Set up
 

@@ -58,7 +58,7 @@ Scripts should be synced using GitHub. Data files (raw and processed) are exclud
 
         -   First. look at the list of available nodes [here](https://www.kellogg.northwestern.edu/research-support/computing/kellogg-linux-cluster.aspx) and select the one with the most open cores and ram.
 
-        -   Then, input that as the host. For example, *`klc0307.quest.northwestern.edu`* or *`klc0307.ci.northwestern.edu`.*
+        -   Then, input that as the host. For example, *`klc0307.quest.northwestern.edu`.*
 
     -   **Username**: (your NetID, i.e. the letter and number combination)
 
@@ -93,7 +93,7 @@ Scripts should be synced using GitHub. Data files (raw and processed) are exclud
 3.  **Input username and node:** In the terminal or command line, type the following:
 
     ```{bash eval=FALSE}
-    ssh <netID>@klc<node>.ci.northwestern.edu
+    ssh <netID>@klc<node>.quest.northwestern.edu
     ```
 
     Where you should replace `<netID>` with your NetID made up of letters and numbers, e.g. abc1324, and `<node>` with the node you select from [this list](https://www.kellogg.northwestern.edu/research-support/computing/kellogg-linux-cluster.aspx), e.g. 0307.

@@ -66,12 +66,13 @@ Scripts should be synced using GitHub. Data files (raw and processed) are exclud
 
     -   **Port**: 22
 
-        ![](KLC/images/klc_login.png)
+        <img src="https://github.com/skhiggins/KLC_Guide/blob/main/images/klc_login.png" align="center" height="80%" width="80%">        
+
 2.  **Connect:** Click on **Quickconnect**.
 3.  **Upload files:** Drag files from local folders to server folders
     -   On FileZilla, local folders are displayed on the left pane and server folders on the right pane:
 
-        ![](KLC/images/klc_window.png)
+        <img src="https://github.com/skhiggins/KLC_Guide/blob/main/images/klc_window.png" align="center" height="80%" width="80%">        
 
     -   Navigate on the **left** (local folders) to your local directory for the project folder.
 

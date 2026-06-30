@@ -1,6 +1,6 @@
 # KLC Guide
 
-Instructions for using the Kellogg Linux Cluster (KLC) for our research projects.
+Instructions for using the Kellogg Linux Cluster (KLC) for our research projects. Also see [Kellogg Research Support's KLC guide](https://rs-kellogg.github.io/krs-cookbook/welcome.html).
 
 *For broader programming guides, see my [R Guide](https://github.com/skhiggins/R_guide), [Python Guide](https://github.com/skhiggins/Python_guide) and [Stata Guide](https://github.com/skhiggins/Stata_guide).*
 

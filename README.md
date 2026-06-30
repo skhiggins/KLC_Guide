@@ -58,7 +58,7 @@ Scripts should be synced using GitHub. Data files (raw and processed) are exclud
 
         -   First. look at the list of available nodes [here](https://www.kellogg.northwestern.edu/research-support/computing/kellogg-linux-cluster.aspx) and select the one with the most open cores and ram.
 
-        -   Then, input that as the host. For example, *`klc0307.ci.northwestern.edu`.*
+        -   Then, input that as the host. For example, *`klc0307.quest.northwestern.edu`* or *`klc0307.ci.northwestern.edu`.*
 
     -   **Username**: (your NetID, i.e. the letter and number combination)
 
